@@ -1,0 +1,43 @@
+# Dependency directories
+node_modules/
+
+# JavaScript files (compiled from TypeScript)
+*.js
+
+# Source map files
+*.js.map
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Compiled binary addons ([https://nodejs.org/api/addons.html)](https://nodejs.org/api/addons.html))
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Temporary files
+*.tmp
+*.log
