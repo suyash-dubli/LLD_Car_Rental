@@ -6,7 +6,7 @@ export class Car {
     model: string;
     licenseNumber: string;
     type: string;
-    status: string;
+    isAvailable: boolean;
     pricePerDay: number;
     
     constructor({
@@ -17,7 +17,7 @@ export class Car {
         model,
         licenseNumber,
         type,
-        status,
+        isAvailable,
         pricePerDay,
     }) {
         this.id = id;  
@@ -27,12 +27,12 @@ export class Car {
         this.model = model;
         this.licenseNumber = licenseNumber;
         this.type = type;
-        this.status = status;
+        this.isAvailable = isAvailable;
         this.pricePerDay = pricePerDay;
     }
 
-    updateStatus(status: string) {
-        this.status = status;
+    updateStatus(status: boolean) {
+        this.isAvailable = status;
     }
 
     updatePricePerDay(pricePerDay: number) {

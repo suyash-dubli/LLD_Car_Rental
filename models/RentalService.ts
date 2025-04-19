@@ -4,19 +4,19 @@ import { Reservation } from "./Reservation";
 
 export class RentalService{
     id:string;
-    cars:Car[];
-    customers:Customer[];
-    reservations:Reservation[];
-    constructor({
-        id,
-        cars,
-        customers,
-        reservations
-    }) {
-        this.id = id;  
-        this.cars = cars;
-        this.customers = customers;
-        this.reservations = reservations;
+    cars:Car[]=[];
+    customers:Customer[]=[];
+    reservations:Reservation[]=[];
+    
+    //Singleton pattern - Creational Design pattern 
+    static instance:RentalService;
+    constructor(){}
+    
+    static getInstance(){
+        if(!RentalService.instance){
+            RentalService.instance = new RentalService();
+        }
+        return RentalService.instance;
     }
 
     addCar(newCar:Car){
